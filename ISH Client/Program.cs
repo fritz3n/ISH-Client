@@ -9,6 +9,11 @@ namespace ISH_Client
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter Userhash:");
+            string User = Console.ReadLine();
+
+            ISH_Client cli = new ISH_Client(User);
+            cli.CopyFromConsTask();
         }
     }
 }
